@@ -29,7 +29,7 @@ function sendEmailNotification() {
 function onOpen() { 
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var menuEntries = [ {name: "Authorize", functionName: "authorize"}, {name: "Stop alerts", functionName: "stopalerts"} ];
-  ss.addMenu("Gmail Alerts", menuEntries);
+  ss.addMenu("Gmail Email Alerts", menuEntries);
 }   
 
 function authorize(){}
