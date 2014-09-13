@@ -9,11 +9,16 @@
 
 function sendEmailNotification() { 
   try { 
+    var emailAddress = "";
+    var subject = "";
+    var message = "";
+    var signature = "";
+
     var label = GmailApp.getUserLabelByName('emailNotifications'); 
     var threads = label.getThreads();
     for (var i = 0; i < threads.length; i++) {
        var originalSubject = threads[i].getFirstMessageSubject();
-       MailApp.sendEmail(emailAddress, subject, message+originalSubject);
+       MailApp.sendEmail(emailAddress, subject, message+originalSubject+signature);
     }    
     label.removeFromThreads(threads); 
   } catch(err) { 
