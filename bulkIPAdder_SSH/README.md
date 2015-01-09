@@ -1,6 +1,6 @@
 bulkIPAdder_SSH
 =========
-This Python script automates the bulk addition of IP addresses into Juniper SSG and SRX firewall devices.
+This Python script automates the bulk addition of IP addresses into Juniper SSG and SRX firewall devices. Developed during Summer Internship. BSD-2 License.
 
 New in Version 3:
 
@@ -15,6 +15,10 @@ New in Version 3:
         To the SRX in ~40 min (50 per minute; ~1 a second)
         (The difference is due to how each device handles an IP import. The process has been optimized 
         as much as possible, the SRX just takes time.)
+
+Notes:
+
+Written for Python 2.x, NOT 3.x
 
 A caveat with this script: you cannot provide IP addresses via standard in; they must be placed in a text file 
 and a path to that text file must be provided as one of the script’s CLI arguments.
