@@ -25,14 +25,14 @@ and a path to that text file must be provided as one of the script’s CLI argum
 
 Required modules:
 
-1. datetime (included with python >= 2.3)
-2. sys (included in all python versions AFAIK)
-3. subprocess (included with python >= 2.4) (not actually used in the script at the moment)
-4. paramiko (NOT included by default, install with e.g., `sudo pip install paramiko`, requires python >= 2.6)
-5. getpass (included with python >= 2.4)
-6. socket (included with all python versions AFAIK)
-7. base64 (included with python >= 2.4)
-8. time (included with python >= 2.2)
+    1. datetime (included with python >= 2.3)
+    2. sys (included in all python versions AFAIK)
+    3. subprocess (included with python >= 2.4) (not actually used in the script at the moment)
+    4. paramiko (NOT included by default, install with e.g., `sudo pip install paramiko`, requires python >= 2.6)
+    5. getpass (included with python >= 2.4)
+    6. socket (included with all python versions AFAIK)
+    7. base64 (included with python >= 2.4)
+    8. time (included with python >= 2.2)
 
 Help/documentation:
 ```python
